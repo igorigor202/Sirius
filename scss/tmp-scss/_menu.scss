@@ -1,0 +1,151 @@
+.menu {
+  @include adpt($tab-r) {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    //background-color: rgba(0, 0, 0, 0.5);
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 10;
+    transition: transform 0.3s ease;
+
+
+
+    &._open {
+      transform: translateX(0);
+    }
+
+  }
+
+  &__list {
+    display: flex;
+
+    @include adpt($tab-r) {
+      background-color: #fff;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      padding: 20px 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding: 15px;
+    transition: color 0.3s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @include adpt($sdes-r) {
+      padding: 8px;
+    }
+
+    @include adpt($tab-r) {
+      padding: 12px 15px;
+      font-weight: 500;
+    }
+
+    &._active {
+      @include adpt($tab-r) {
+        color: $accent;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      color: $accent;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background-color: $accent;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &_catalog {
+      background-color: $accent;
+      color: $white;
+      display: flex;
+      align-items: center;
+      line-height: 1.1;
+      font-weight: 500;
+      transition: background-color 0.3s;
+
+      @include adpt($tab-r) {
+        display: none;
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $accent-hover;
+      }
+
+      &::after {
+        display: none;
+      }
+
+      & span {
+        padding-top: 2px;
+      }
+
+      & svg {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        margin-right: 8px;
+      }
+    }
+
+    &_accent {
+      color: $accent;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+  }
+
+  &__item {
+    @include adpt($tab-r) {
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+
+    &_mob {
+      display: none;
+
+      @include adpt($tab-r) {
+        display: block;
+      }
+    }
+  }
+
+  &__close {
+    display: none;
+
+    @include adpt($tab-r) {
+      display: block;
+      flex-shrink: 0;
+    }
+  }
+}

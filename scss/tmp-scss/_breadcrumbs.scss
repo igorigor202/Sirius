@@ -1,0 +1,87 @@
+.breadcrumbs {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: $grey;
+  padding: 40px 0;
+
+  @include adpt ($bmob-r) {
+    padding: 20px 0;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include adpt ($bmob-r) {
+      display: none;
+    }
+  }
+
+  &__item {
+    padding-right: 20px;
+    position: relative;
+
+    @include adpt ($bmob-r) {
+      padding-right: 0;
+
+      &:first-child a {
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        font-size: 16px;
+
+        & svg {
+          width: 24px;
+          height: 24px;
+          object-fit: contain;
+          margin-right: 10px;
+        }
+
+        & span {
+          padding-top: 2px;
+        }
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: ">";
+      right: 7px;
+      top: 2px;
+
+      @include adpt ($bmob-r) {
+        display: none;
+
+      }
+    }
+
+    & a {
+      transition: all 0.3s;
+      padding: 2px 0;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  &__item:last-child {
+    padding-right: 0;
+    color: $accent;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &__list-mob {
+    display: none;
+
+    @include adpt ($bmob-r) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}

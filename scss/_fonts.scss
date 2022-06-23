@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('../fonts/Robotobold.woff2') format('woff2'),
+    url('../fonts/Robotobold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('../fonts/Robotomedium.woff2') format('woff2'),
+    url('../fonts/Robotomedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('../fonts/Roboto.woff2') format('woff2'),
+    url('../fonts/Roboto.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'lato';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('../fonts/latoregular.woff2') format('woff2'),
+    url('../fonts/latoregular.woff') format('woff');
+}

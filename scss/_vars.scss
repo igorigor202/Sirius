@@ -1,0 +1,21 @@
+$accent: #E93C3C;
+$accent-hover: #FF6262;
+$grey: #828282;
+$default:#25282B;
+$default2:#52575C;
+$white: #ffffff;
+
+$sdes-r: 1380;
+$tab-r: 1024;
+$stab-r: 768;
+$bmob-r: 576;
+$smob-r: 420;
+$vsmob-r: 360;
+
+
+@mixin adpt($width) {
+  @media (max-width: #{$width}px) {
+    @content;
+  }
+}
+

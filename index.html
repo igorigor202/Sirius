@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sirius</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body" id="body">
+
+<header class="header" id="header">
+  <div class="header__top">
+
+    <div class="container">
+      <div class="header__top-inner">
+
+        <div class="header__top-left">
+
+          <a class="header__logo logo" href="#">
+            <img class="logo__img" width="90" height="80" src="images/logo.png" alt="Логотип">
+          </a>
+
+          <div class="header__geo">
+            <span>Выберите ваш город:</span>
+            <a class="header__geo-link" href="#">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M14 6.66675C14 11.3334 8 15.3334 8 15.3334C8 15.3334 2 11.3334 2 6.66675C2 5.07545 2.63214 3.54933 3.75736 2.42411C4.88258 1.29889 6.4087 0.666748 8 0.666748C9.5913 0.666748 11.1174 1.29889 12.2426 2.42411C13.3679 3.54933 14 5.07545 14 6.66675Z"
+                  stroke="#E93C3C" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M8 8.66675C9.10457 8.66675 10 7.77132 10 6.66675C10 5.56218 9.10457 4.66675 8 4.66675C6.89543 4.66675 6 5.56218 6 6.66675C6 7.77132 6.89543 8.66675 8 8.66675Z"
+                  stroke="#E93C3C" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>Санкт-Петербург</span>
+            </a>
+          </div>
+
+          <div class="header__input-wrap">
+            <input class="header__input" type="text" placeholder="Поиск">
+            <button class="header__input-btn">
+              <span class="sr-only">Поиск</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                  stroke="#EB4747" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.5 17.5L13.875 13.875" stroke="#EB4747" stroke-width="2" stroke-linecap="square"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="header__top-right">
+
+          <ul class="header__social social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" width="24" height="24" src="images/social/facebook.svg" alt="social-img">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" width="24" height="24" src="images/social/inst.svg" alt="social-img">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" width="24" height="24" src="images/social/vk.svg" alt="social-img">
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__contact contact">
+            <li class="contact__item">
+              <span class="contact__city">
+                г. Москва
+              </span>
+              <a class="contact__link" href="tel:+74957772345">
+                +7 (495) 777-2345
+              </a>
+              <a class="contact__tel" href="#">
+                Заказать звонок
+              </a>
+            </li>
+            <li class="contact__item">
+              <span class="contact__city">
+                г. Ногинск
+              </span>
+              <a class="contact__link" href="tel:+74956004400">
+                +7 (495) 600-4400
+              </a>
+              <a class="contact__tel" href="#">
+                Заказать звонок
+              </a>
+            </li>
+          </ul>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <nav class="header__bottom">
+
+
+    <div class="header__bottom-inner">
+
+      <div class="header__bottom-left">
+        <button class="header__burger menu-toggle  burger" id="openMenu">
+          <span class="sr-only">Открыть меню</span>
+          <img class="burger__img" src="images/icon/menu.svg" alt="burger">
+        </button>
+        <a class="menu__link menu__link_catalog" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+            <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+            <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+          </svg>
+          <span>Каталог</span>
+        </a>
+        <div class="menu header__menu" id="menu">
+            <ul class="menu__list">
+              <li class="menu__item menu__item_mob">
+                <a class="menu__link" href="#">
+                  Каталог
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Новости
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link _active" href="#">
+                  О компании
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Скидки
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Доставка и оплата
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Дилеры
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Магазины
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Контакты
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link_accent" href="#">
+                  Честный знак
+                </a>
+              </li>
+            </ul>
+          <button class="burger  menu-toggle menu__close" id="closeMenu">
+            <img class="burger__img" src="images/icon/menu-close.svg" alt="close menu">
+            <span class="sr-only">Закрыть меню</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="header__bottom-right">
+        <ul class="header__funct">
+          <li class="header__funct-item">
+            <a class="header__funct-link" href="#">
+              <div class="header__funct-icon">
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none">
+                  <path
+                    d="M17.3666 2.84172C16.941 2.41589 16.4356 2.0781 15.8794 1.84763C15.3232 1.61716 14.727 1.49854 14.125 1.49854C13.5229 1.49854 12.9267 1.61716 12.3705 1.84763C11.8143 2.0781 11.3089 2.41589 10.8833 2.84172L9.99997 3.72506L9.11663 2.84172C8.25689 1.98198 7.09083 1.49898 5.87497 1.49898C4.65911 1.49898 3.49304 1.98198 2.6333 2.84172C1.77356 3.70147 1.29056 4.86753 1.29056 6.08339C1.29056 7.29925 1.77356 8.46531 2.6333 9.32506L3.51663 10.2084L9.99997 16.6917L16.4833 10.2084L17.3666 9.32506C17.7925 8.89943 18.1303 8.39407 18.3607 7.83785C18.5912 7.28164 18.7098 6.68546 18.7098 6.08339C18.7098 5.48132 18.5912 4.88514 18.3607 4.32893C18.1303 3.77271 17.7925 3.26735 17.3666 2.84172V2.84172Z"
+                    stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="header__funct-demo">2</span>
+              </div>
+              <span class="sr-only">Избранное</span>
+            </a>
+          </li>
+          <li class="header__funct-item">
+            <a class="header__funct-link header__funct-link_basket" href="#">
+              <div class="header__funct-icon">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+                  <g clip-path="url(#clip0_22_111)">
+                    <path
+                      d="M7.50008 18.3332C7.96032 18.3332 8.33341 17.9601 8.33341 17.4998C8.33341 17.0396 7.96032 16.6665 7.50008 16.6665C7.03984 16.6665 6.66675 17.0396 6.66675 17.4998C6.66675 17.9601 7.03984 18.3332 7.50008 18.3332Z"
+                      stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M16.6666 18.3332C17.1268 18.3332 17.4999 17.9601 17.4999 17.4998C17.4999 17.0396 17.1268 16.6665 16.6666 16.6665C16.2063 16.6665 15.8333 17.0396 15.8333 17.4998C15.8333 17.9601 16.2063 18.3332 16.6666 18.3332Z"
+                      stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M0.833252 0.833496H4.16658L6.39992 11.9918C6.47612 12.3755 6.68484 12.7201 6.98954 12.9654C7.29424 13.2107 7.6755 13.341 8.06658 13.3335H16.1666C16.5577 13.341 16.9389 13.2107 17.2436 12.9654C17.5483 12.7201 17.757 12.3755 17.8333 11.9918L19.1666 5.00016H4.99992"
+                      stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_22_111">
+                      <rect width="21" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="header__funct-demo">10</span>
+              </div>
+              <span class="sr-only">Корзина</span>
+
+            </a>
+          </li>
+          <li class="header__funct-item">
+            <a class="header__funct-link header__funct-link_user" href="#">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6903 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66666C5.78261 12.5 4.93476 12.8512 4.30964 13.4763C3.68452 14.1014 3.33333 14.9493 3.33333 15.8333V17.5"
+                  stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M10 9.16667C11.841 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.841 2.5 10 2.5C8.15906 2.5 6.66667 3.99238 6.66667 5.83333C6.66667 7.67428 8.15906 9.16667 10 9.16667Z"
+                  stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>Войти</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+</header>
+
+<main class="main">
+
+  <div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+          Каталог товаров
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+          Спецодежда
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        Спецодежда зимняя
+      </li>
+    </ul>
+    <ul class="breadcrumbs__list-mob">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link_return" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 6L9 12L15 18" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+
+          <span>Назад</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  <section class="catalog">
+    <div class="container">
+
+      <h1 class="catalog__title title">
+        Спецодежда Зимняя
+      </h1>
+
+      <ul class="tags">
+        <li class="tags__item">
+          <a class="tags__link" href="#">
+            Спецодежда с заключением Минпромторга
+          </a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#">
+            Костюмы женские
+          </a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#">
+            Костюмы мужские
+          </a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#">
+            Костюмы сварщика
+          </a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#">
+            Жилеты женские
+          </a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#">
+            Жилеты мужские
+          </a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#">
+            Жилеты зимние
+          </a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#">
+            Брюки
+          </a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#">
+            Куртки женские
+          </a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#">
+            Куртки мужские
+          </a>
+        </li>
+        <li class="tags__item">
+          <a class="tags__link" href="#">
+            Полукомбинезоны зимние
+          </a>
+        </li>
+        <li class="tags__item">
+          <button class="tags__btn" type="button">
+            Показать еще
+          </button>
+        </li>
+      </ul>
+
+      <div class="catalog__wrapper">
+
+        <div class="catalog__top">
+          <div class="select" id="select-1">
+            <button type="button" class="select__toggle" value="up" data-select="toggle" data-index="0">По возрастанию
+              цены
+
+            </button>
+            <div class="select__dropdown">
+              <ul class="select__options">
+                <li class="select__option select__option_selected" data-select="option" data-value="up" data-index="0">
+                  По возрастанию цены</li>
+                <li class="select__option" data-select="option" data-value="down" data-index="1">По убыванию цены</li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalog__top-filter filter-toggle" id="open-filter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M22 3H2L10 12.46V19L14 21V12.46L22 3Z" stroke="#25282B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Фильтр</span>
+          </div>
+        </div>
+
+        <div class="catalog__inner">
+
+          <div class="catalog__filter filter" id="filter">
+            <div class="catalog__filter-left">
+              <div class="catalog__filter-title filter-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 6L9 12L15 18" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>Фильтр</span>
+              </div>
+              <ul class="filter__inner">
+                <li class="filter__item filter__item_open">
+
+                  <div class="filter__title-box">
+                    <h3 class="filter__title">
+                      Цена, руб
+                    </h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 15L12 9L6 15" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <div class="collapse collapse_show">
+                    <div class="range-slider">
+                      <div class="range-slider__inputs">
+                        <label class="range-slider__label">
+                          <span class="range-slider__text">от</span>
+                          <input class="range-slider__input" id="range-input-0" min="10" max="999999" type="number"
+                            placeholder="10">
+                        </label>
+                        <label class="range-slider__label">
+                          <span class="range-slider__text">до</span>
+                          <input class="range-slider__input" id="range-input-1" min="10" max="99999" type="number"
+                            placeholder="99999">
+                        </label>
+                      </div>
+                      <div class="range-slider__stroke" id="range-slider">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="filter__item">
+
+                  <div class="filter__title-box">
+                    <h3 class="filter__title">
+                      Вид изделия
+                    </h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 15L12 9L6 15" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <div class="collapse">
+                    <ul class="filter__checkbox-inner">
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="type-1" type="checkbox">
+                        <label class="filter__label" for="type-1">
+                          Брюки
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item filter__checkbox-item_no-active">
+                        <input class="filter__check-input" id="type-2" type="checkbox">
+                        <label class="filter__label" for="type-2">
+                          Жилет
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="type-3" type="checkbox">
+                        <label class="filter__label" for="type-3">
+                          Полукомбинезон
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__item">
+
+                  <div class="filter__title-box">
+                    <h3 class="filter__title">
+                      Сезон
+                    </h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 15L12 9L6 15" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <div class="collapse">
+                    <ul class="filter__checkbox-inner">
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="season-1" type="checkbox">
+                        <label class="filter__label" for="season-1">
+                          Зима
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__item">
+
+                  <div class="filter__title-box">
+                    <h3 class="filter__title">
+                      Пол
+                    </h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 15L12 9L6 15" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <div class="collapse">
+                    <ul class="filter__checkbox-inner">
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="gender-1" type="checkbox">
+                        <label class="filter__label" for="gender-1">
+                          Женский
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="gender-2" type="checkbox">
+                        <label class="filter__label" for="gender-2">
+                          Мужской
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="gender-3" type="checkbox">
+                        <label class="filter__label" for="gender-3">
+                          Универсальный
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__item">
+
+                  <div class="filter__title-box">
+                    <h3 class="filter__title">
+                      Торговая марка / Бренд
+                    </h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 15L12 9L6 15" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <div class="collapse">
+                    <ul class="filter__checkbox-inner">
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="brand-1" type="checkbox">
+                        <label class="filter__label" for="brand-1">
+                          СИРИУС
+                        </label>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__item">
+
+                  <div class="filter__title-box">
+                    <h3 class="filter__title">
+                      Состав
+                    </h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 15L12 9L6 15" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <div class="collapse">
+                    <ul class="filter__checkbox-inner">
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="structure-1" type="checkbox">
+                        <label class="filter__label" for="structure-1">
+                          Брюки
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="structure-2" type="checkbox">
+                        <label class="filter__label" for="structure-2">
+                          Жилет
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="structure-3" type="checkbox">
+                        <label class="filter__label" for="structure-3">
+                          Костюм
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="structure-4" type="checkbox">
+                        <label class="filter__label" for="structure-4">
+                          Куртка
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="structure-5" type="checkbox">
+                        <label class="filter__label" for="structure-5">
+                          Полукомбинезон
+                        </label>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__item">
+
+                  <div class="filter__title-box">
+                    <h3 class="filter__title">
+                      Ткань/Материал верха
+                    </h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 15L12 9L6 15" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <div class="collapse">
+                    <ul class="filter__checkbox-inner">
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="material-1" type="checkbox">
+                        <label class="filter__label" for="material-1">
+                          Брюки
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="material-2" type="checkbox">
+                        <label class="filter__label" for="material-2">
+                          Жилет
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="material-3" type="checkbox">
+                        <label class="filter__label" for="material-3">
+                          Костюм
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="material-4" type="checkbox">
+                        <label class="filter__label" for="materiale-4">
+                          Куртка
+                        </label>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__item">
+
+                  <div class="filter__title-box">
+                    <h3 class="filter__title">
+                      Утеплитель
+                    </h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 15L12 9L6 15" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <div class="collapse">
+                    <ul class="filter__checkbox-inner">
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="insulation-1" type="checkbox">
+                        <label class="filter__label" for="insulation-1">
+                          Брюки
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="insulation-2" type="checkbox">
+                        <label class="filter__label" for="insulation-2">
+                          Жилет
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="insulation-3" type="checkbox">
+                        <label class="filter__label" for="insulation-3">
+                          Костюм
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="insulation-4" type="checkbox">
+                        <label class="filter__label" for="minsulation-4">
+                          Куртка
+                        </label>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__item">
+
+                  <div class="filter__title-box">
+                    <h3 class="filter__title">
+                      Назначение
+                    </h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 15L12 9L6 15" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <div class="collapse">
+                    <ul class="filter__checkbox-inner">
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="purpose-1" type="checkbox">
+                        <label class="filter__label" for="purpose-1">
+                          Брюки
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="purpose-2" type="checkbox">
+                        <label class="filter__label" for="purpose-2">
+                          Жилет
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="purpose-3" type="checkbox">
+                        <label class="filter__label" for="purpose-3">
+                          Костюм
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="purpose-4" type="checkbox">
+                        <label class="filter__label" for="purpose-4">
+                          Куртка
+                        </label>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+                <li class="filter__item">
+
+                  <div class="filter__title-box">
+                    <h3 class="filter__title">
+                      Цвет
+                    </h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18 15L12 9L6 15" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <div class="collapse">
+                    <ul class="filter__checkbox-inner">
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="color-1" type="checkbox">
+                        <label class="filter__label" for="color-1">
+                          Бирюзовый
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="color-2" type="checkbox">
+                        <label class="filter__label" for="color-2">
+                          Васильковый
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="color-3" type="checkbox">
+                        <label class="filter__label" for="color-3">
+                          Красный
+                        </label>
+                      </li>
+                      <li class="filter__checkbox-item">
+                        <input class="filter__check-input" id="color-4" type="checkbox">
+                        <label class="filter__label" for="color-4">
+                          Лимнонный
+                        </label>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <button class="filter__btn filter-toggle">
+                Показать (<span>123</span>)
+              </button>
+              <button class="filter__btn filter__btn_remove">
+                Сбросить
+              </button>
+            </div>
+            <div class="catalog__filter-right">
+              <button class="burger filter-toggle">
+                <img class="burger__img" src="images/icon/menu-close.svg" alt="close menu">
+                <span class="sr-only">Закрыть фильтры</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="catalog__grid-wrap">
+            <div class="catalog__grid">
+
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/1.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart _active" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/2.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/1.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart _active" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/2.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/1.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart _active" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/2.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/1.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart _active" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/2.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/1.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart _active" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/2.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/2.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart _active" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/2.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/1.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart _active" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="catalog__item product-item">
+
+                <div class="product-item__top">
+                  <a class="product-item__img-wrap popup--link" href="#choice">
+                    <img class="product-item__img" src="images/product/2.jpg" alt="product">
+                  </a>
+                  <a class="product-item__discr popup--link" href="#choice">
+                    <span class="product-item__art">
+                      Арт 1232425
+                    </span>
+                    <div class="product-item__text">
+                      Костюм "СИРИУС-Горка" куртка
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-item__bottom">
+                  <div class="product-item__price">
+                    <p class="product-item__price-opt">
+                      Опт 3144 ₽
+                    </p>
+                    <p class="product-item__price-ros">
+                      Розница 4235 ₽
+                    </p>
+                  </div>
+                  <div class="product-item__btns">
+                    <a class="product-item__btn popup--link" href="#choice">
+                      В корзину
+                    </a>
+                    <a class="product-item__heart" href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M17.3667 3.84172C16.941 3.41589 16.4357 3.0781 15.8795 2.84763C15.3232 2.61716 14.7271 2.49854 14.125 2.49854C13.5229 2.49854 12.9268 2.61716 12.3705 2.84763C11.8143 3.0781 11.309 3.41589 10.8833 3.84172L10 4.72506L9.11666 3.84172C8.25692 2.98198 7.09086 2.49898 5.875 2.49898C4.65914 2.49898 3.49307 2.98198 2.63333 3.84172C1.77359 4.70147 1.29059 5.86753 1.29059 7.08339C1.29059 8.29925 1.77359 9.46531 2.63333 10.3251L3.51666 11.2084L10 17.6917L16.4833 11.2084L17.3667 10.3251C17.7925 9.89943 18.1303 9.39407 18.3608 8.83785C18.5912 8.28164 18.7099 7.68546 18.7099 7.08339C18.7099 6.48132 18.5912 5.88514 18.3608 5.32893C18.1303 4.77271 17.7925 4.26735 17.3667 3.84172V3.84172Z"
+                          stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="sr-only">Добавить в избранное</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <button class="catalog__grid-btn" type="button">
+              Показать еще
+            </button>
+            <ul class="pagination">
+              <li class="pagination__item pagination__item_prev">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 6L9 12L15 18" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li class="pagination__item">
+                <a href="#">
+                  1
+                </a>
+              </li>
+              <li class="pagination__item">
+                <a href="#">
+                  2
+                </a>
+              </li>
+              <li class="pagination__item pagination__item_active">
+                <a href="#">
+                  3
+                </a>
+              </li>
+              <li class="pagination__item pagination__item_no-active">
+                <a href="#">
+                  4
+                </a>
+              </li>
+              <li class="pagination__item pagination__item_all">
+                <a href="#">
+                  Все
+                </a>
+              </li>
+              <li class="pagination__item pagination__item_next">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 6L9 12L15 18" stroke="#CACCCF" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__inner">
+        <ul class="footer__list footer__list_tel">
+          <li class="footer__item">
+            <a class="footer__tel" href="tel:+74957772345">
+              <span>+7 (495) 777-2345</span>
+              <span class="footer__tel-text">Заказать звонок</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <ul class="footer__social social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" width="24" height="24" src="images/social/facebook.svg" alt="social-img">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" width="24" height="24" src="images/social/inst.svg" alt="social-img">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" width="24" height="24" src="images/social/vk.svg" alt="social-img">
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <a class="footer__download" href="#" download="">
+              <img class="footer__download-img" width="28" height="28" src="images/icon/exel.svg" alt="exel-icon">
+              <span>Скачать прайс-лист</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              каталог
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              СПЕЦОДЕЖДА
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Средства защиты рук
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Активный отдых
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Хозтовары и постельные принадлежности
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              обувь
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Средства индивидуальной защиты
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              жилеты на все случаи жизни
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              линия Plus
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link footer__link_accent" href="#">
+              Ликвидация
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__list footer__list_large">
+          <li class="footer__item">
+            <div class="footer__subscribe subscribe">
+              <p class="subscribe__title">
+                Подпишитесь на новости и акции и будьте в курсе всего!
+              </p>
+              <div class="subscribe__input-box">
+                <input class="subscribe__input" type="text" placeholder="Введите свой e-mail">
+                <button class="subscribe__btn">
+                  <span class="sr-only">Подписаться на рассылку</span>
+                  <img class="subscribe__img" src="images/icon/send.svg" alt="send" width="24" height="24">
+                </button>
+              </div>
+              <div class="subscribe__input-box">
+                <input class="subscribe__checkbox" type="checkbox" id="agree">
+                <label class="subscribe__label" for="agree">
+                  <div> Я даю согласие на обработку персональных данных и соглашаюсь
+                    с правилами обработки персональных данных.</div>
+                </label>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <span class="footer__copyright">2021 © PLANETA-SIRIUS.RU</span>
+      <p class="footer__info">
+        Вся приведенная на сайте информация, носят исключительно ознакомительный характер и не является публичной
+        офертой.
+      </p>
+    </div>
+  </div>
+
+
+</footer>
+
+<div id="choice" class="popup">
+  <div class="popup__body">
+    <div class="popup__content choice">
+      <a href="#" class="popup__close popup--close"></a>
+      <div class="choice__title">
+        Выбор опций
+      </div>
+      <div class="choice__top">
+        <span>Размерный ряд</span>
+        <span>Количество</span>
+      </div>
+      <ul class="choice__list">
+        <li class="choice__item">
+          <p class="choice__discr">
+            Размер 104-108, Рост 170-176 (Арт. 43585)
+          </p>
+          <div class="choice__counter counter">
+
+            <div class="counter__input--wrap">
+              <input class="counter__input" disabled type="text" value="0">
+            </div>
+            <button class="counter__btn" data-direction="plus">
+              <span class="sr-only">Прибавить</span>
+            </button>
+            <button class="counter__btn counter__btn_minus" data-direction="minus">
+              <span class="sr-only">Убавить</span>
+            </button>
+          </div>
+        </li>
+        <li class="choice__item">
+          <p class="choice__discr">
+            Размер 104-108, Рост 170-176 (Арт. 43585)
+          </p>
+          <div class="choice__counter counter">
+
+            <div class="counter__input--wrap">
+              <input class="counter__input" disabled type="text" value="0">
+            </div>
+            <button class="counter__btn" data-direction="plus">
+              <span class="sr-only">Прибавить</span>
+            </button>
+            <button class="counter__btn counter__btn_minus" data-direction="minus">
+              <span class="sr-only">Убавить</span>
+            </button>
+          </div>
+        </li>
+        <li class="choice__item">
+          <p class="choice__discr">
+            Размер 104-108, Рост 170-176 (Арт. 43585)
+          </p>
+          <div class="choice__counter counter">
+
+            <div class="counter__input--wrap">
+              <input class="counter__input" disabled type="text" value="0">
+            </div>
+            <button class="counter__btn" data-direction="plus">
+              <span class="sr-only">Прибавить</span>
+            </button>
+            <button class="counter__btn counter__btn_minus" data-direction="minus">
+              <span class="sr-only">Убавить</span>
+            </button>
+          </div>
+        </li>
+        <li class="choice__item">
+          <p class="choice__discr">
+            Размер 104-108, Рост 170-176 (Арт. 43585)
+          </p>
+          <div class="choice__counter counter">
+
+            <div class="counter__input--wrap">
+              <input class="counter__input" disabled type="text" value="0">
+            </div>
+            <button class="counter__btn" data-direction="plus">
+              <span class="sr-only">Прибавить</span>
+            </button>
+            <button class="counter__btn counter__btn_minus" data-direction="minus">
+              <span class="sr-only">Убавить</span>
+            </button>
+          </div>
+        </li>
+
+
+      </ul>
+      <button class="choice__btn" type="button">
+        Добавить в корзину
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

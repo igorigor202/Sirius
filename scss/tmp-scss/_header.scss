@@ -1,0 +1,248 @@
+.header {
+  font-size: 12px;
+  // position: fixed;
+  // width: 100%;
+  // left: 0;
+  // top: 0;
+  // z-index: 8;
+
+  &__top {
+    padding: 5px 0;
+
+    @include adpt($tab-r) {
+      display: none;
+    }
+  }
+
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__top-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 680px;
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  &__logo {
+    max-width: 90px;
+    margin-right: 35px;
+  }
+
+  &__geo {
+    margin-right: 35px;
+    flex-shrink: 0;
+
+    & span {
+      display: block;
+      color: $grey;
+      margin-bottom: 1px;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      color: $accent;
+
+      &:hover {
+        & span {
+          color: $accent-hover;
+        }
+
+        & svg path {
+          stroke: $accent-hover;
+        }
+      }
+
+      & span {
+        color: $accent;
+        border-bottom: 1px dashed $accent;
+        transition: border-color 0.3s;
+      }
+
+      & svg {
+        width: 16px;
+        height: 17px;
+        margin-right: 6px;
+        object-fit: contain;
+
+        & path {
+          transition: stroke 0.3s;
+        }
+      }
+    }
+  }
+
+  &__input-wrap {
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    flex-shrink: 2;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: #F9F9FA;
+    border: 1px solid #CACCCF;
+    border-radius: 2px;
+    padding: 9px 35px 9px 14px;
+    font-size: 16px;
+    line-height: 1;
+    color: $grey;
+    outline-color: $accent;
+  }
+
+  &__input-btn {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & svg {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+  }
+
+  &__top-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    max-width: 410px;
+  }
+
+  &__social {
+    margin-right: 35px;
+    flex-shrink: 0;
+  }
+
+  &__bottom {
+    background-color: #F2F2F2;
+    font-size: 14px;
+    color: $grey;
+
+    @include adpt($tab-r) {
+      background-color: $white;
+      box-shadow: 0px 2px 6px rgba(37, 40, 43, 0.15);
+    }
+  }
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    max-width: 1310px;
+    margin: 0 auto;
+
+    @include adpt($sdes-r) {
+      padding-left: 0;
+    }
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__bottom-left {
+    flex: 1;
+    display: flex;
+  }
+
+  &__bottom-right {
+    max-width: 170px;
+    flex: 1;
+
+    @include adpt($sdes-r) {
+      max-width: 130px;
+    }
+  }
+
+  &__funct {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__funct-link {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      & svg path {
+        stroke: $accent
+      }
+    }
+
+    &_user {
+      & span {
+        color: $accent;
+        margin-left: 5px;
+        padding-top: 2px;
+
+        @include adpt($sdes-r) {
+          display: none;
+        }
+      }
+    }
+
+    & svg {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+
+      & path {
+        transition: stroke 0.3s;
+      }
+    }
+  }
+
+  &__funct-icon {
+    position: relative;
+    font-size: 0;
+  }
+
+  &__funct-demo {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+    background-color: $accent;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    line-height: 1;
+    font-weight: 400;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $white;
+    font-family: 'lato', sans-serif;
+  }
+
+  &__burger {
+    display: none;
+
+    @include adpt($tab-r) {
+      display: block;
+    }
+  }
+}

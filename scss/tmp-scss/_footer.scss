@@ -1,0 +1,162 @@
+.footer {
+  position: relative;
+  margin-top: auto;
+  border-top: 1px solid #e8e8e8;
+  background-color: #F9F9FA;
+
+  &__top {
+    padding: 50px 0 49px;
+    border-bottom: 1px solid #e8e8e8;
+
+    @include adpt($tab-r) {
+      padding: 50px 0 29px;
+    }
+
+    @include adpt($bmob-r) {
+      padding: 40px 0 0;
+    }
+
+    & .container {
+      @include adpt($stab-r) {
+        padding: 0;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 30px 0 35px;
+
+    @include adpt($bmob-r) {
+      padding: 20px 0;
+    }
+  }
+
+  &__copyright {
+    display: block;
+    margin-bottom: 8px;
+    color: #000;
+    font-weight: 500;
+  }
+
+  &__info {
+    color: $default2;
+    font-weight: 300;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    color: #A0A4A8;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #878b8f;
+    }
+
+    &_accent {
+      color: $accent;
+
+      &:hover {
+        color: $accent-hover;
+      }
+    }
+  }
+
+  &__tel {
+    font-weight: 700;
+    font-size: 20px;
+    color: $default2;
+
+    &:hover {
+      & .footer__tel-text {
+        color: $accent-hover;
+      }
+    }
+
+    & span {
+      display: block;
+    }
+  }
+
+  &__tel-text {
+    color: $accent;
+    transition: color 0.3s;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  &__download {
+    display: flex;
+    align-items: center;
+    color: $accent;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $accent-hover;
+    }
+  }
+
+  &__download-img {
+    width: 28px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    @include adpt($stab-r) {
+      flex-direction: column;
+
+    }
+  }
+
+  &__list {
+    max-width: 232px;
+    margin-right: 15px;
+
+    @include adpt($tab-r) {
+      margin-bottom: 20px;
+    }
+
+    @include adpt($stab-r) {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding: 0 15px;
+    }
+
+    &_tel {
+      @include adpt($stab-r) {
+        order: 1;
+        border-top: 1px solid #e8e8e8;
+        padding-top: 20px;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &_large {
+      max-width: 300px;
+
+      @include adpt($tab-r) {
+        max-width: 270px;
+      }
+
+      @include adpt($stab-r) {
+        order: 2;
+        max-width: 450px;
+      }
+    }
+  }
+
+}
